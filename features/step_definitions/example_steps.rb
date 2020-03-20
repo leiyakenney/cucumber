@@ -11,5 +11,17 @@ Then /^I should( not)? see a field "([^"]*)"$/ do |negate, name|
 end
 
 When /^I fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
-  fill_in "firstname", :with => value
+  fill_in field, :with => value
+end
+
+When(/^I select checkbox "(.*?)"$/) do |cb|
+  check(cb)
+end
+
+When /I click on the "(.+)" button/ do |locator|
+  page.click_button locator
+end
+
+Then /^I should see the text "([^"]*)"$/ do |name|
+    page.first('tr', text: name)
 end
