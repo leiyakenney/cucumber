@@ -3,6 +3,7 @@ require 'bundler/setup'
 require 'capybara/cucumber'
 require 'selenium-webdriver'
 require 'pry'
+require 'rspec/expectations'
 
 SERVER_URL  = 'http://www.myrapname.com/'
 WEB_BROWSER ||= :chrome
