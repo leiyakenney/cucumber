@@ -1,5 +1,6 @@
-Feature: An Example Feature
+Feature: Visit homepage of http://www.myrapname.com/
 
-  Scenario: An example scenario
+  Scenario: Input Fields Exist on homepage
     Given   I am on the homepage
-    Then    I see the text "Welcome to MyRapName.com"
+    Then I should see a field "firstname"
+    And I should see a field "lastinitial"
