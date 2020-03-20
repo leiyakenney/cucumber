@@ -9,3 +9,7 @@ Then /^I should( not)? see a field "([^"]*)"$/ do |negate, name|
   rescue Capybara::ElementNotFound
   end
 end
+
+When /^I fill in "([^"]*)" with "([^"]*)"$/ do |field, value|
+  fill_in "firstname", :with => value
+end
