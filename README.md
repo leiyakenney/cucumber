@@ -19,3 +19,6 @@ Write an automated test to validate each of the following:
 3. Input data into the fields
 4. Submit a name for male with a nickname and validate that a new name has been prepended to the list
 5. Submit twice for a female with a last initial and validate that a new name has been prepended to the list
+
+### Known Issues
+Tests do not check for prepending to the list
