@@ -25,3 +25,8 @@ end
 Then /^I should see the text "([^"]*)"$/ do |name|
     page.first('tr', text: name)
 end
+
+Then /^I should have (\d+) table rows$/ do |number_of_rows|
+  actual_number = page.all(:css, 'table > tbody > tr tr').size
+  actual_number.should == number_of_rows
+end
